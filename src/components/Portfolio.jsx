@@ -1,37 +1,37 @@
-import adminDashboard from "../assets/portfolio/admin_dashboard.png";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import adminDashboard from "../assets/portfolio/adminDashboard.png";
+import urlShortener from "../assets/portfolio/urlShortener.png";
+import bulkEmail from "../assets/portfolio/bulkEmail.png";
+import passwordReset from "../assets/portfolio/passwordReset.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: adminDashboard,
-      githubLink: "https://github.com/manu-git-b-s/admin_dashboard.git",
+      githubLink: "https://github.com/manu-git-b-s/admin_dashboard",
       deployedLink: "https://admin-dashboard-manu.netlify.app/",
+      projectTitle: "Admin Dashboard App",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: bulkEmail,
+      githubLink: "https://github.com/manu-git-b-s/bulk-email-frontend",
+      deployedLink: "https://bulk-email-manu.netlify.app/",
+      projectTitle: "Bulk Email App",
     },
     {
       id: 3,
-      src: navbar,
+      src: urlShortener,
+      githubLink: "https://github.com/manu-git-b-s/url-shortener-frontend",
+      deployedLink: "https://manu-url-shortener.netlify.app/",
+      projectTitle: "URL Shortener App",
     },
     {
       id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: passwordReset,
+      githubLink: "https://github.com/manu-git-b-s/password_reset-frontend",
+      deployedLink: "https://manu-password-reset.netlify.app/",
+      projectTitle: "Password Reset App",
     },
   ];
 
@@ -49,31 +49,35 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, githubLink, deployedLink }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex justify-center items-center">
-                <a
-                  href={deployedLink}
-                  target="_blank"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                >
-                  Demo
-                </a>
-                <a
-                  href={githubLink}
-                  target="_blank"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                >
-                  Code
-                </a>
+          {portfolios.map(
+            ({ id, src, githubLink, deployedLink, projectTitle }) => (
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <h1 className="text-white my-3 text-center">{projectTitle}</h1>
+
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <div className="flex justify-center items-center">
+                  <a
+                    href={deployedLink}
+                    target="_blank"
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={githubLink}
+                    target="_blank"
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>
