@@ -1,5 +1,5 @@
 import adminDashboard from "../assets/portfolio/adminDashboard.png";
-import urlShortener from "../assets/portfolio/urlShortener.png";
+import chatApp from "../assets/portfolio/chatApp.png";
 import bulkEmail from "../assets/portfolio/bulkEmail.png";
 import passwordReset from "../assets/portfolio/passwordReset.png";
 
@@ -17,14 +17,14 @@ const Portfolio = () => {
       src: bulkEmail,
       githubLink: "https://github.com/manu-git-b-s/bulk-email-frontend",
       deployedLink: "https://bulk-email-manu.netlify.app/",
-      projectTitle: "Bulk Email App",
+      projectTitle: "Bulk Email App MERN",
     },
     {
       id: 3,
-      src: urlShortener,
-      githubLink: "https://github.com/manu-git-b-s/url-shortener-frontend",
-      deployedLink: "https://manu-url-shortener.netlify.app/",
-      projectTitle: "URL Shortener App",
+      src: chatApp,
+      githubLink: "https://github.com/manu-git-b-s/chat_app_mern.git",
+      deployedLink: "https://chat-app-mern-hq5g.onrender.com/",
+      projectTitle: "Chat App MERN",
     },
     {
       id: 4,
