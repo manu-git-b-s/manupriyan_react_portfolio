@@ -32,7 +32,7 @@ const Portfolio = () => {
       src: passwordReset,
       githubLink: "https://github.com/manu-git-b-s/password_reset-frontend",
       deployedLink: "https://manu-password-reset.netlify.app/",
-      projectTitle: "Password Reset App",
+      projectTitle: "Password Reset App MERN",
     },
     {
       id: 5,
