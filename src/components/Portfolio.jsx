@@ -1,5 +1,6 @@
 import adminDashboard from "../assets/portfolio/adminDashboard.png";
 import chatApp from "../assets/portfolio/chatApp.png";
+import blogApp from "../assets/portfolio/blogApp.png";
 import bulkEmail from "../assets/portfolio/bulkEmail.png";
 import passwordReset from "../assets/portfolio/passwordReset.png";
 
@@ -7,24 +8,24 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: adminDashboard,
-      githubLink: "https://github.com/manu-git-b-s/admin_dashboard",
-      deployedLink: "https://admin-dashboard-manu.netlify.app/",
-      projectTitle: "Admin Dashboard App",
-    },
-    {
-      id: 2,
       src: bulkEmail,
       githubLink: "https://github.com/manu-git-b-s/bulk-email-frontend",
       deployedLink: "https://bulk-email-manu.netlify.app/",
       projectTitle: "Bulk Email App MERN",
     },
     {
-      id: 3,
+      id: 2,
       src: chatApp,
       githubLink: "https://github.com/manu-git-b-s/chat_app_mern.git",
       deployedLink: "https://chat-app-mern-hq5g.onrender.com/",
       projectTitle: "Chat App MERN",
+    },
+    {
+      id: 3,
+      src: blogApp,
+      githubLink: "https://github.com/manu-git-b-s/blog_app_mern.git",
+      deployedLink: "https://blog-app-mern-g7v9.onrender.com",
+      projectTitle: "Blog App MERN",
     },
     {
       id: 4,
@@ -32,6 +33,13 @@ const Portfolio = () => {
       githubLink: "https://github.com/manu-git-b-s/password_reset-frontend",
       deployedLink: "https://manu-password-reset.netlify.app/",
       projectTitle: "Password Reset App",
+    },
+    {
+      id: 5,
+      src: adminDashboard,
+      githubLink: "https://github.com/manu-git-b-s/admin_dashboard",
+      deployedLink: "https://admin-dashboard-manu.netlify.app/",
+      projectTitle: "React Admin Dashboard App",
     },
   ];
 
