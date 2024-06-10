@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import HeroImage from "../assets/heroImage.png";
-import { MdDownload, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { RiProfileLine } from "react-icons/ri";
 
 const Home = () => {
   return (
@@ -32,14 +33,13 @@ const Home = () => {
             </Link>
             <a
               className="d-inline group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500  to-blue-500 cursor-pointer"
-              download
               target="_blank"
               rel="noreferrer"
               href="/resume.pdf"
             >
               Resume
               <span>
-                <MdDownload size={25} className="ml-1" />
+                <RiProfileLine size={25} className="ml-1" />
               </span>
             </a>
           </div>
